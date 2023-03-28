@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl7.css">
+    <title>Galeria</title>
+</head>
+<body>
+    <header>
+        <h2>Galeria miejsc ciekawych</h2>
+    </header>
+    <main id='fotka'>
+        <img src="lanzarotte.jpg" alt="galeria">
+    </main>
+    <left>
+        <h3>Przeglądaj zdjęcia</h3>
+        <img onclick="pd('lanzarotte.jpg')" src="lanzarotte.jpg" alt="lanzarotte">
+        <img onclick="pd('pekin.jpg')" src="pekin.jpg" alt="pekin">
+        <img onclick="pd('serengeti.jpg')" src="serengeti.jpg" alt="serengeti">
+        <img onclick="pd('wenecja.jpg')" src="wenecja.jpg" alt="wenecja">
+        <img onclick="pd('tajlandia.jpg')" src="tajlandia.jpg" alt="tajlandia">
+    </left>
+    <right>
+        <h3>Obrazy w naszej galerii</h3>
+        <table>
+            <tr>
+                <td>Europa</td>
+                <td>Azja</td>
+                <td>Afryka</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p>Polub nas <img src="icon-off.png"></p>
+        <a href="https://pixabay.com" target="_blank">Odkryj więcej zdjęć</a>
+    </right>
+    <footer>
+        Autor: 00000000000
+    </footer>
+    <script>
+        function pd(x){
+            document.getElementById('fotka').innerHTML = '<img id="fotka" src="'+x+'" alt="galeria">'
+        }
+        function pd(y){
+            document.getElementById('fotka').innerHTML = '<img id="fotka" src="'+x+'" alt="galeria">'
+        }
+    </script>
+</body>
+</html>
